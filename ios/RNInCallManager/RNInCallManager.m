@@ -63,6 +63,11 @@
 
 RCT_EXPORT_MODULE(InCallManager)
 
++ (BOOL)requiresMainQueueSetup
+{
+    return YES;
+}
+
 - (instancetype)init
 {
     if (self = [super init]) {
